@@ -1,11 +1,11 @@
+import Elements.FigureCollecion;
+
 public class BoardRow {
 
 
     private BoardRow colup;
     private BoardRow coldown;
     private FigureCollecion figureCollecion;
-
-
 
     public BoardRow() {
     }

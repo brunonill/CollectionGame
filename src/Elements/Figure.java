@@ -1,3 +1,5 @@
+package Elements;
+
 import java.util.Objects;
 
 public class Figure {
@@ -37,8 +39,6 @@ public class Figure {
     Figure prev;
     String type = this.getClass().getSimpleName();
 
-
-
     public Figure getNext() {
         return next;
     }
@@ -55,8 +55,7 @@ public class Figure {
         this.prev = prev;
     }
 
-    enum Color {
+   public enum Color {
         BLACK, WHITE
-
     }
 }

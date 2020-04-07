@@ -1,3 +1,5 @@
+package Elements;
+
 public class FigureCollecion {
 
     protected Figure figureHead;
@@ -27,10 +29,9 @@ public class FigureCollecion {
             newFigure.setNext(t.getNext());
             newFigure.setColor(colorCopy);
         }
-
     }
 
-    void addFigure(Figure add) {
+    public void addFigure(Figure add) {
 
         Figure temp;
         if (figureHead == null) {
@@ -44,7 +45,7 @@ public class FigureCollecion {
         }
     }
 
-    public Boolean checkUnique() {
+    private Boolean checkUnique() {
 
         int a = size();
         Boolean test = true;
@@ -100,7 +101,7 @@ public class FigureCollecion {
         return result;
     }
 
-    Figure getfigure(int index) {
+    public Figure getfigure(int index) {
 
         Figure figure = figureHead;
         if (index >= size()) {
@@ -120,7 +121,6 @@ public class FigureCollecion {
             return figure;
         return null;
     }
-
 
 }
 

@@ -1,3 +1,5 @@
+package Elements;
+
 public class None extends Figure {
     public None() {
         super();
@@ -21,16 +23,5 @@ public class None extends Figure {
 
        return Character.toString(result);
     }
-    /*
-    public static final None INSTANCE = new None();
-
-    private None() {
-        if (INSTANCE != null) {
-            throw new IllegalMonitorStateException("Figura juz uzyta w kolekcji");
-        }
-
-    }
-}
-*/
 }
 

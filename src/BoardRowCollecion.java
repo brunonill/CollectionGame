@@ -1,12 +1,10 @@
+import Elements.FigureCollecion;
+
 public class BoardRowCollecion {
 
    private BoardRow boardRowHead;
 
-    public BoardRow getBoardRowHead() {
-        return boardRowHead;
-    }
-
-    void addBoardRow(BoardRow boardRow,FigureCollecion bR) {
+    void addBoardRow(BoardRow boardRow, FigureCollecion bR) {
         BoardRow temp;
         if (boardRowHead == null) {
             boardRowHead = boardRow;
@@ -17,7 +15,6 @@ public class BoardRowCollecion {
             temp.setColdown(boardRowHead);
             boardRowHead.setColup(temp);
             boardRowHead.setFigureCollecion(bR);
-
         }
     }
 
@@ -55,6 +52,4 @@ public class BoardRowCollecion {
         }
         return 0;
     }
-
-
 }
